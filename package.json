@@ -1,0 +1,21 @@
+{
+  "name": "basic-server-nodejs",
+  "version": "1.0.0",
+  "description": "Basic 'hello world' chat server written in NodeJs",
+  "main": "dist/src/main.js",
+  "scripts": {
+    "go": "node dist/src/main.js",
+    "transpile": "babel --plugins transform-async-to-generator src/* -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "net": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
