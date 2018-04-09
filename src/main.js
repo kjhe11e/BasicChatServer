@@ -20,7 +20,7 @@ server.on('connection', socket => {
 
     socket.on('end', () => {
         delete sockets[socket.id];
-        console.log('Client disconnected.');
+        console.log(`Client ${socket.id} disconnected.`);
     });
 });
 

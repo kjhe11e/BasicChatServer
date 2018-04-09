@@ -25,7 +25,7 @@ server.on('connection', function (socket) {
 
     socket.on('end', function () {
         delete sockets[socket.id];
-        console.log('Client disconnected.');
+        console.log('Client ' + socket.id + ' disconnected.');
     });
 });
 
