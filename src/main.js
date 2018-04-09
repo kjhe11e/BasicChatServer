@@ -24,6 +24,14 @@ server.on('connection', socket => {
     });
 });
 
+server.on('error', function (err) {
+    console.error('Server error:', err);
+});
+
+server.on('close', function () {
+    console.log('Server closed.');
+});
+
 server.listen(8000, () => console.log('Server bound.'));
 
 
